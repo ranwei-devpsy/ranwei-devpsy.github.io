@@ -48,7 +48,7 @@ const updated = new Intl.DateTimeFormat('en-GB', { dateStyle: 'long', timeZone: 
     <footer class="site-footer">
       <div class="footer-inner">
         <div><strong>{c.name}</strong><span>{c.school} · {c.university}</span></div>
-        <div class="footer-right"><a href={`mailto:${profile.email}`}>{profile.email}</a><span>{c.updated} {updated}</span></div>
+        <div class="footer-right"><div>{profile.email}</div><span>{c.updated} {updated}</span></div>
       </div>
     </footer>
   </body>
