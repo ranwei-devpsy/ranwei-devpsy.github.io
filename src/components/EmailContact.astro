@@ -1,0 +1,9 @@
+---
+import CopyButton from './CopyButton.astro';
+import profile from '../data/profile.json';
+import { content } from '../lib/content';
+---
+<span class="email-contact">
+  <a href={`mailto:${profile.email}`}>{profile.email}</a>
+  <CopyButton text={profile.email} label={content.copy.email} />
+</span>

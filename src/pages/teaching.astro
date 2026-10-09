@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import EmailContact from '../components/EmailContact.astro';
+import { content } from '../lib/content';
+const c = content;
+---
+<Layout title={c.nav.teaching} active="teaching">
+  <header class="page-heading"><h1>{c.nav.teaching}</h1><p>{c.teaching.intro}</p></header>
+  <section class="course-list" aria-label={c.teaching.courses}>
+    <article class="course-row"><p class="record-date">{c.teaching.spring2024}</p><div><h2>{c.teaching.course1}</h2></div></article>
+    <article class="course-row"><p class="record-date">{c.teaching.spring2026}</p><div><h2>{c.teaching.course2}</h2></div></article>
+  </section>
+  <section class="contact-section"><h2>{c.teaching.inquiries}</h2><EmailContact /></section>
+</Layout>

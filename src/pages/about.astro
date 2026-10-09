@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import EmailContact from '../components/EmailContact.astro';
+import profile from '../data/profile.json';
+import talks from '../data/talks.json';
+import { content } from '../lib/content';
+const c = content;
+const journals = ['Child Development', 'Developmental Psychology', 'Developmental Science', 'Contemporary Educational Psychology', 'Developmental Review', 'Scientific Reports', 'Computers in Human Behavior: Artificial Humans', 'Journal of Child Language', 'Reading and Writing', 'First Language', 'Infant Behavior and Development', 'Infancy', 'Autism Research', 'Asia-Pacific Journal of Regional Science', 'European Journal of Education', 'Early Education and Development', 'Language Learning and Development', 'Current Psychiatry Research and Reviews', 'Acta Psychologica', 'Social Cognitive and Affective Neuroscience', 'Behavioral Sciences', 'Journal of Psychiatric Research'];
+const awardYears = ['', '2023', '2016', '2014'];
+const formatTalkDate = (date: string) => new Intl.DateTimeFormat('en', { year: 'numeric', month: 'long', timeZone: 'UTC' }).format(new Date(`${date}-01T00:00:00Z`));
+---
+<Layout title={c.nav.about} active="about">
+  <header class="page-heading"><h1>{c.about.title}</h1></header>
+  <div class="page-jump-links"><a href="#appointments">{c.about.appointments}</a><a href="#education">{c.about.education}</a><a href="#service">{c.about.service}</a><a href="#talks">{c.about.talks}</a><a href="#contact">{c.contact}</a></div>
+  <section id="appointments" class="content-section"><h2>{c.about.appointments}</h2><div class="record-list">
+    <article class="record-row"><p class="record-date">{c.about.present}</p><div><h3>{c.position}</h3><p>{c.school} · {c.university}</p><p class="record-detail">{c.location}</p></div></article>
+    <article class="record-row"><p class="record-date">2021–2023</p><div><h3>{c.postdoc}</h3><p>{c.hospital} · {c.medicalSchool}</p><p class="record-detail">{c.about.postdocLocation}</p></div></article>
+  </div></section>
+  <section id="education" class="content-section"><h2>{c.about.education}</h2><div class="record-list">
+    <article class="record-row"><p class="record-date">2016–2021</p><div><h3>{c.phd}</h3><p>{c.harvard}</p><p class="record-detail">{c.about.phdDetail}<br />{c.about.secondary}</p></div></article>
+    <article class="record-row"><p class="record-date">2014–2015</p><div><h3>{c.about.masters}</h3><p>{c.about.harvardGse}</p></div></article>
+    <article class="record-row"><p class="record-date">2010–2014</p><div><h3>{c.about.bachelor}</h3><p>{c.about.tsinghua}</p><p class="record-detail">{c.about.outstanding}</p></div></article>
+  </div></section>
+  <section class="content-section"><h2>{c.about.recognition}</h2><ul class="recognition-list">{c.about.awards.map((award, i) => <li>{award}{awardYears[i] && <span>{awardYears[i]}</span>}</li>)}</ul></section>
+  <section id="service" class="content-section"><h2>{c.about.service}</h2><p><strong>{c.about.fellow}</strong></p><details class="service-details"><summary>{c.about.journals}</summary><ul class="journal-list" lang="en">{journals.map(journal => <li>{journal}</li>)}</ul></details><details class="service-details"><summary>{c.about.otherReview}</summary><h3 class="small-heading">{c.about.conferences}</h3><ul class="plain-list" lang="en"><li>International Association for the Study of Child Language Congress</li><li>Budapest Central European University Conference on Cognitive Development</li><li>Society for Research in Child Development Biennial Meeting</li><li>American Educational Research Association Annual Meeting</li></ul><h3 class="small-heading">{c.about.fellowships}</h3><ul class="plain-list" lang="en"><li>American Psychological Foundation Alma Empowering Minds Scholarship and Mentorship Program</li><li>American Psychological Foundation Queen-Nellie Evans Award</li></ul></details></section>
+  <section id="talks" class="content-section"><h2>{c.about.talks}</h2><ol class="talk-list">{talks.map(talk => <li><span class="talk-date">{formatTalkDate(talk.date)}</span><span>{talk.title.en}<br /><span class="talk-venue">{talk.venue.en}</span></span></li>)}</ol></section>
+  <section id="contact" class="contact-section"><h2>{c.contact}</h2><EmailContact /><p>{c.school}</p><p><a href={profile.facultyPage}>{c.about.facultyPage}<span aria-hidden="true"> ↗</span></a></p></section>
+</Layout>

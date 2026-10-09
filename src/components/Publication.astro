@@ -1,0 +1,32 @@
+---
+import { content } from '../lib/content';
+import { pathFor } from '../lib/paths';
+import { citationText } from '../lib/citations';
+import CopyButton from './CopyButton.astro';
+const { paper, compact = false } = Astro.props;
+const c = content.publications;
+const authorText = compact ? paper.authors.replace(/\s*\+/g, '') : paper.authors;
+const authors = authorText.split(/(Wei,\s*R\.\*?)/g);
+const citation = citationText(paper);
+---
+<article class:list={['publication', { compact }]} data-year={paper.year} data-topics={paper.topics.join(' ')} data-type={paper.type} data-search={`${paper.title} ${paper.authors} ${paper.journal}`}>
+  <div class="publication-year">{paper.year}</div>
+  <div class="publication-content">
+    <h3 class="publication-title" lang="en">
+      {paper.doi ? <a href={paper.doi}>{paper.title}</a> : paper.title}
+    </h3>
+    <p class="publication-authors" lang="en">{authors.map(part => part.startsWith('Wei,') ? <strong>{part}</strong> : part)}</p>
+    <p class="publication-source"><cite lang="en">{paper.journal}</cite>{!compact && paper.type !== 'chapter' && paper.details ? `${paper.details.startsWith(',') ? '' : '. '}${paper.details}` : ''}{paper.type === 'chapter' && <span> · {c.book}</span>}</p>
+    {!compact && paper.type === 'chapter' && <p class="publication-note">In A. Morgenstern & S. Goldin-Meadow (Eds.), pp. 66–88. De Gruyter Mouton.</p>}
+    {paper.note && <p class="publication-note">* {paper.note}.</p>}
+    {(!compact || paper.resources) && <div class="publication-resources">{!compact && paper.doi && <a class="doi-link" href={paper.doi}>DOI: {paper.doi.replace('https://doi.org/', '')}<span aria-hidden="true"> ↗</span></a>}{paper.resources && <a class="doi-link" href={paper.resources}>{c.resources}<span aria-hidden="true"> ↗</span></a>}</div>}
+    <details class="publication-citation">
+      <summary>{c.cite}</summary>
+      <div class="citation-panel">
+        <p class="citation-format">APA</p>
+        <p class="citation-text" lang="en">{citation}</p>
+        <div class="citation-actions"><CopyButton text={citation} label={c.copyCitation} /><a href={pathFor(`citations/${paper.id}.bib`)} download>{c.bibtex}</a></div>
+      </div>
+    </details>
+  </div>
+</article>

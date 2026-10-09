@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import publications from '../data/publications.json';
+import { content } from '../lib/content';
+import { pathFor } from '../lib/paths';
+const c = content;
+---
+<Layout title={c.nav.research} active="research">
+  <header class="page-heading"><h1>{c.nav.research}</h1><p>{c.research.intro}</p></header>
+  <div class="page-jump-links"><a href="#research-themes">{c.research.themes}</a><a href="#methods">{c.research.methods}</a></div>
+  <section id="research-themes" aria-label={c.research.themes}>
+    {c.themes.map(theme => <article class="theme-row"><div class="theme-label"><h2>{theme.title}</h2></div><div><p>{theme.description}</p><h3 class="small-heading">{c.research.related}</h3><ul class="related-papers">{theme.paperIds.map(id => { const paper = publications.find(p => p.id === id)!; return <li><a lang="en" href={pathFor(`publications/#${paper.id}`)}>{paper.title}</a></li>; })}</ul></div></article>)}
+  </section>
+  <section id="methods" class="methods-section"><h2>{c.research.methods}</h2><p>{c.research.methodsText}</p><a class="section-link" href="https://pkuls.pku.edu.cn/kxyj/10xxkxsys242846.html">{c.research.lab}<span aria-hidden="true">↗</span></a></section>
+</Layout>

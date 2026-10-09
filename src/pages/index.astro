@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Publication from '../components/Publication.astro';
+import EmailContact from '../components/EmailContact.astro';
+import publications from '../data/publications.json';
+import { pathFor } from '../lib/paths';
+import { content } from '../lib/content';
+const c = content;
+const selected = publications.filter(p => p.selected);
+---
+<Layout title={c.nav.home} active="home">
+  <section class="home-intro" aria-labelledby="profile-name">
+    <div class="intro-main">
+      <h1 id="profile-name">{c.name}</h1>
+      <p class="appointment">{c.position}</p>
+      <p class="affiliation">{`${c.school}, ${c.university}`}</p>
+      <p class="intro-bio">{c.home.bio}</p>
+      <div class="intro-links"><a class="section-link" href={pathFor('research/')}>{c.nav.research}<span aria-hidden="true">→</span></a></div>
+    </div>
+    <aside class="profile-aside" aria-label={c.contact}>
+      <img class="profile-photo" src={pathFor('images/ran-wei.png')} width="700" height="466" alt={c.home.portrait} fetchpriority="high" />
+      <div class="aside-details">
+        <h2>{c.contact}</h2><EmailContact /><p class="location">{c.school}</p>
+      </div>
+    </aside>
+  </section>
+  <section class="selected-publications" aria-labelledby="selected-heading">
+    <div class="section-heading"><h2 id="selected-heading">{c.home.selected}</h2><a class="section-link" href={pathFor('publications/')}>{c.home.allPublications}<span aria-hidden="true">→</span></a></div>
+    {selected.map(paper => <Publication paper={paper} compact />)}
+  </section>
+</Layout>

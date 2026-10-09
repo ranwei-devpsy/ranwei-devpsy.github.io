@@ -1,0 +1,483 @@
+[
+  {
+    "id": "publication-1",
+    "year": 2026,
+    "authors": "Wei, R., Bissert, T.+, Paul, K.+, Dubrule, O.+, Sullivan, E. F.+, Shama, T., Kakon, S. H., Tofail, F., Haque, R., & Nelson, C. A.",
+    "title": "Exploring the social origins of attention and executive functions: A cultural perspective from parent-infant interactions",
+    "journal": "Developmental Psychology",
+    "details": "Advance online publication",
+    "doi": "https://doi.org/10.1037/dev0002239",
+    "note": null,
+    "type": "article",
+    "selected": true,
+    "metadataSource": "https://pubmed.ncbi.nlm.nih.gov/42490228/",
+    "topics": [
+      "interaction",
+      "cognition",
+      "regulation"
+    ],
+    "bibliography": {
+      "status": "Advance online publication"
+    }
+  },
+  {
+    "id": "publication-2",
+    "year": 2026,
+    "authors": "Wei, R.*, Surrain, S.*, Luk, G., & Rowe, M. L.",
+    "title": "Tuning in to development: How home music activities relate to language and motor skills in toddlers from monolingual and multilingual home environments",
+    "journal": "Infancy",
+    "details": ", 31(3), e70095",
+    "doi": "https://doi.org/10.1111/infa.70095",
+    "note": "Joint first authorship",
+    "type": "article",
+    "selected": false,
+    "resources": "https://github.com/ranwei-devpsy/almm_openscience",
+    "metadataSource": "https://onlinelibrary.wiley.com/doi/full/10.1111/infa.70095",
+    "topics": [
+      "language"
+    ],
+    "bibliography": {
+      "volume": "31",
+      "issue": "3",
+      "articleNumber": "e70095"
+    }
+  },
+  {
+    "id": "publication-3",
+    "year": 2026,
+    "authors": "Wei, R., Liszkowski, U., Harris, P. L., & Rowe, M. L.",
+    "title": "What is the baby “saying”? Adults’ interpretation of infants’ pointing gestures",
+    "journal": "Infancy",
+    "details": ", 31(3), e70093",
+    "doi": "https://doi.org/10.1111/infa.70093",
+    "note": null,
+    "type": "article",
+    "selected": false,
+    "resources": "https://github.com/ranwei-devpsy/whatisthebabysaying_openscience",
+    "metadataSource": "https://onlinelibrary.wiley.com/doi/10.1111/infa.70093",
+    "topics": [
+      "language",
+      "interaction"
+    ],
+    "bibliography": {
+      "volume": "31",
+      "issue": "3",
+      "articleNumber": "e70093"
+    }
+  },
+  {
+    "id": "publication-4",
+    "year": 2026,
+    "authors": "Yang, Q. T., Leyva, D., Liu, Y., Rowe, M. L., & Wei, R.",
+    "title": "Caregivers’ elaboration during joint narratives predicts Chinese children’s emotion regulation: Is theory of mind a mediator?",
+    "journal": "Journal of Cognition and Development",
+    "details": ", 1–27",
+    "doi": "https://doi.org/10.1080/15248372.2026.2644868",
+    "note": null,
+    "type": "article",
+    "selected": false,
+    "topics": [
+      "interaction",
+      "language",
+      "regulation"
+    ],
+    "bibliography": {
+      "pages": "1–27"
+    }
+  },
+  {
+    "id": "publication-5",
+    "year": 2026,
+    "authors": "Zhang, N., Xu, J., Wei, R.*, & Wang, Y.*",
+    "title": "From scaffolding to transfer: The impact of AI-powered support on children’s narrative skills",
+    "journal": "Learning and Instruction",
+    "details": ", 104, 102345",
+    "doi": "https://doi.org/10.1016/j.learninstruc.2026.102345",
+    "note": "Joint senior authorship",
+    "type": "article",
+    "selected": true,
+    "metadataSource": "https://www.sciencedirect.com/science/article/pii/S0959475226000307",
+    "topics": [
+      "ai",
+      "language"
+    ],
+    "bibliography": {
+      "volume": "104",
+      "articleNumber": "102345"
+    }
+  },
+  {
+    "id": "publication-6",
+    "year": 2026,
+    "authors": "Wei, R.*, Guillu, A.*+, Blatt, J., & Rowe, M.",
+    "title": "How parent-child higher-order thinking talk supports early oral language and pre-literacy development",
+    "journal": "Language Learning and Development",
+    "details": "",
+    "doi": null,
+    "note": "Joint first authorship",
+    "type": "article",
+    "selected": false,
+    "topics": [
+      "interaction",
+      "language"
+    ],
+    "bibliography": {}
+  },
+  {
+    "id": "publication-7",
+    "year": 2025,
+    "authors": "Wei, R., Harris, P. L., Snow, C. E., & Rowe, M. L.",
+    "title": "From the “here and now” to the “there and then”: How parent–child decontextualized conversations support early development",
+    "journal": "Developmental Review",
+    "details": ", 77, 101217",
+    "doi": "https://doi.org/10.1016/j.dr.2025.101217",
+    "note": null,
+    "type": "article",
+    "selected": true,
+    "topics": [
+      "interaction",
+      "language"
+    ],
+    "bibliography": {
+      "volume": "77",
+      "articleNumber": "101217"
+    }
+  },
+  {
+    "id": "publication-8",
+    "year": 2025,
+    "authors": "Hua, Z.+, Li, T., Shi, R., Wei, R.*, & Yi, L.*",
+    "title": "Prediction efficiency and incremental processing strategy during spoken language comprehension in autistic children: An eye-tracking study",
+    "journal": "Molecular Autism",
+    "details": ", 16(1), 39",
+    "doi": "https://doi.org/10.1186/s13229-025-00674-0",
+    "note": "Joint senior authorship",
+    "type": "article",
+    "selected": false,
+    "topics": [
+      "language",
+      "cognition"
+    ],
+    "bibliography": {
+      "volume": "16",
+      "issue": "1",
+      "articleNumber": "39"
+    }
+  },
+  {
+    "id": "publication-9",
+    "year": 2025,
+    "authors": "Sullivan, E. F., Wei, R., Kakon, S. H., Shama, T. K., Tofail, F., Petri, W. A., Haque, R., & Nelson, C. A.",
+    "title": "EEG theta power in Bangladeshi children: Associations with early experiences and cognitive outcomes",
+    "journal": "Child Development",
+    "details": ", 96(4), 1474–1487",
+    "doi": "https://doi.org/10.1111/cdev.14245",
+    "note": null,
+    "type": "article",
+    "selected": false,
+    "topics": [
+      "cognition"
+    ],
+    "bibliography": {
+      "volume": "96",
+      "issue": "4",
+      "pages": "1474–1487"
+    }
+  },
+  {
+    "id": "publication-10",
+    "year": 2025,
+    "authors": "Hua, Z.+, Li, T., Shi, R., Wei, R.*, & Yi, L.*",
+    "title": "Activation of thematic and taxonomic relations during lexical‐semantic processing in autistic children: Evidence from eye movements",
+    "journal": "Autism Research",
+    "details": ", 18(5), 1037–1049",
+    "doi": "https://doi.org/10.1002/aur.70023",
+    "note": "Joint senior authorship",
+    "type": "article",
+    "selected": false,
+    "topics": [
+      "language",
+      "cognition"
+    ],
+    "bibliography": {
+      "volume": "18",
+      "issue": "5",
+      "pages": "1037–1049"
+    }
+  },
+  {
+    "id": "publication-11",
+    "year": 2025,
+    "authors": "Poulton, R., Bakir-Demir, T., Guiney, H., Kokaua, J., Salmon, K., Schaughency, E., Taumoepeau, M., Clifford, A., McLauchlan, J., Edgeler, C., Maruariki, N., McNaughton, S., Gluckman, P., O’Sullivan, J., Wei, R., Trudgen, A., & Reese, E.",
+    "title": "Cohort profile: The New Zealand Best Start Study (Kia Tīmata Pai)",
+    "journal": "International Journal of Epidemiology",
+    "details": ", 54(4), dyaf103",
+    "doi": "https://doi.org/10.1093/ije/dyaf103",
+    "note": null,
+    "type": "article",
+    "selected": false,
+    "topics": [
+      "language",
+      "regulation"
+    ],
+    "bibliography": {
+      "volume": "54",
+      "issue": "4",
+      "articleNumber": "dyaf103"
+    }
+  },
+  {
+    "id": "publication-12",
+    "year": 2024,
+    "authors": "Wei, R., Sullivan, E. F., Begum, F., Rahman, N., Tofail, F., Haque, R., & Nelson, C. A.",
+    "title": "Parental communicative input as a protective factor in Bangladeshi families living in poverty: A multi‐dimensional perspective",
+    "journal": "Developmental Science",
+    "details": ", 27(6), e13494",
+    "doi": "https://doi.org/10.1111/desc.13494",
+    "note": null,
+    "type": "article",
+    "selected": true,
+    "topics": [
+      "interaction",
+      "language"
+    ],
+    "bibliography": {
+      "volume": "27",
+      "issue": "6",
+      "articleNumber": "e13494"
+    }
+  },
+  {
+    "id": "publication-13",
+    "year": 2024,
+    "authors": "Xing, J.*, Wei, R.*, Wang, H.*, Hua, Z., Tang, X., Yi, L., Li, X., & Liu, J.",
+    "title": "Symptoms of ADHD and autism spectrum disorder interactively predict children’s verbal fluency",
+    "journal": "Journal of Attention Disorders",
+    "details": ", 28(7), 1092–1104",
+    "doi": "https://doi.org/10.1177/10870547241232081",
+    "note": "Joint first authorship",
+    "type": "article",
+    "selected": false,
+    "metadataSource": "https://journals.sagepub.com/doi/10.1177/10870547241232081",
+    "topics": [
+      "language",
+      "cognition"
+    ],
+    "bibliography": {
+      "volume": "28",
+      "issue": "7",
+      "pages": "1092–1104"
+    }
+  },
+  {
+    "id": "publication-14",
+    "year": 2023,
+    "authors": "Reese, E., Kokaua, J., Guiney, H., Bakir-Demir, T., McLauchlan, J., Edgeler, C., Schaughency, E., Taumoepeau, M., Salmon, K., Clifford, A., Maruariki, N., McNaughton, S., Gluckman, P., Nelson, C., O'Sullivan, J., Wei, R., Pergher, V., Amjad, S., Trudgen, A., & Poulton, R.",
+    "title": "Kia Tīmata Pai (Best Start): A study protocol for a cluster randomised trial with early childhood teachers to support children’s oral language and self-regulation development",
+    "journal": "BMJ Open",
+    "details": ", 13(9), e073361",
+    "doi": "https://doi.org/10.1136/bmjopen-2023-073361",
+    "note": null,
+    "type": "article",
+    "selected": false,
+    "topics": [
+      "language",
+      "regulation"
+    ],
+    "bibliography": {
+      "volume": "13",
+      "issue": "9",
+      "articleNumber": "e073361"
+    }
+  },
+  {
+    "id": "publication-15",
+    "year": 2023,
+    "authors": "Wei, R., Kirby, A., Naigles, L. R., & Rowe, M. L.",
+    "title": "Parents’ talk about conceptual categories with infants: Stability, variability, and implications for expressive language development",
+    "journal": "Journal of Child Language",
+    "details": ", 50(5), 1204–1225",
+    "doi": "https://doi.org/10.1017/S0305000922000319",
+    "note": null,
+    "type": "article",
+    "selected": false,
+    "topics": [
+      "interaction",
+      "language"
+    ],
+    "bibliography": {
+      "volume": "50",
+      "issue": "5",
+      "pages": "1204–1225"
+    }
+  },
+  {
+    "id": "publication-16",
+    "year": 2023,
+    "authors": "Tang, X., Hua, Z., Xing, J., Yi, L., Ji, Z., Zhao, L., Su, X., Yin, T., Wei, R.*, Li, X.*, & Liu, J.*",
+    "title": "Verbal fluency as a predictor of autism spectrum disorder diagnosis and co-occurring attention-deficit/hyperactivity disorder symptoms",
+    "journal": "Reading and Writing",
+    "details": ", 36(6), 1461–1485",
+    "doi": "https://doi.org/10.1007/s11145-022-10319-w",
+    "note": "Joint senior authorship",
+    "type": "article",
+    "selected": false,
+    "metadataSource": "https://api.crossref.org/works/10.1007/s11145-022-10319-w",
+    "topics": [
+      "language",
+      "cognition"
+    ],
+    "bibliography": {
+      "volume": "36",
+      "issue": "6",
+      "pages": "1461–1485"
+    }
+  },
+  {
+    "id": "publication-17",
+    "year": 2022,
+    "authors": "McCatharn, J. M., Herbert, K. K., Wei, R., & Rowe, M. L.",
+    "title": "Circles of support: Exploring the ‘where’ and ‘why’ of parents’ of infants information seeking behaviors",
+    "journal": "Journal of Child and Family Studies",
+    "details": ", 31(11), 2915–2928",
+    "doi": "https://doi.org/10.1007/s10826-021-02124-w",
+    "note": null,
+    "type": "article",
+    "selected": false,
+    "topics": [
+      "interaction"
+    ],
+    "bibliography": {
+      "volume": "31",
+      "issue": "11",
+      "pages": "2915–2928"
+    }
+  },
+  {
+    "id": "publication-20",
+    "year": 2022,
+    "authors": "Ronfard, S.*, Wei, R.*, & Rowe, M. L.",
+    "title": "Exploring the linguistic, cognitive, and social skills underlying lexical processing efficiency as measured by the looking-while-listening paradigm",
+    "journal": "Journal of Child Language",
+    "details": ", 49(2), 302–325",
+    "doi": "https://doi.org/10.1017/S0305000921000106",
+    "note": "Joint first authorship",
+    "type": "article",
+    "selected": false,
+    "topics": [
+      "language",
+      "cognition"
+    ],
+    "bibliography": {
+      "volume": "49",
+      "issue": "2",
+      "pages": "302–325"
+    }
+  },
+  {
+    "id": "publication-18",
+    "year": 2021,
+    "authors": "Choi, B., Wei, R., & Rowe, M. L.",
+    "title": "Show, give, and point gestures across infancy differentially predict language development",
+    "journal": "Developmental Psychology",
+    "details": ", 57(6), 851–862",
+    "doi": "https://doi.org/10.1037/dev0001195",
+    "note": null,
+    "type": "article",
+    "selected": false,
+    "metadataSource": "https://api.crossref.org/works/10.1037/dev0001195",
+    "topics": [
+      "language",
+      "interaction"
+    ],
+    "bibliography": {
+      "volume": "57",
+      "issue": "6",
+      "pages": "851–862"
+    }
+  },
+  {
+    "id": "publication-19",
+    "year": 2021,
+    "authors": "Rowe, M. L., Wei, R., & Salo, V. C.",
+    "title": "Early gesture predicts later language development",
+    "journal": "Gesture in language: Development across the lifespan",
+    "details": "(pp. 66–88). De Gruyter Mouton",
+    "doi": "https://doi.org/10.1515/9783110744938-004",
+    "note": null,
+    "type": "chapter",
+    "selected": false,
+    "topics": [
+      "language",
+      "interaction"
+    ],
+    "bibliography": {
+      "pages": "66–88",
+      "editors": "A. Morgenstern & S. Goldin-Meadow",
+      "editorsBibtex": "Morgenstern, A. and Goldin-Meadow, S.",
+      "publisher": "De Gruyter Mouton"
+    }
+  },
+  {
+    "id": "publication-21",
+    "year": 2020,
+    "authors": "Wei, R., Leech, K. A., & Rowe, M. L.",
+    "title": "Decontextualized language use during Chinese and American caregiver-child interactions",
+    "journal": "Journal of Applied Developmental Psychology",
+    "details": ", 71, 101214",
+    "doi": "https://doi.org/10.1016/j.appdev.2020.101214",
+    "note": null,
+    "type": "article",
+    "selected": false,
+    "topics": [
+      "language",
+      "interaction"
+    ],
+    "bibliography": {
+      "volume": "71",
+      "articleNumber": "101214"
+    }
+  },
+  {
+    "id": "publication-22",
+    "year": 2019,
+    "authors": "Wei, R., Ronfard, S., Leyva, D., & Rowe, M. L.",
+    "title": "Teaching a novel word: Parenting styles and toddlers’ word learning",
+    "journal": "Journal of Experimental Child Psychology",
+    "details": ", 187, 104639",
+    "doi": "https://doi.org/10.1016/j.jecp.2019.05.006",
+    "note": null,
+    "type": "article",
+    "selected": false,
+    "topics": [
+      "language",
+      "interaction"
+    ],
+    "bibliography": {
+      "volume": "187",
+      "articleNumber": "104639"
+    }
+  },
+  {
+    "id": "publication-23",
+    "year": 2018,
+    "authors": "Leech, K., Wei, R., Harring, J. R., & Rowe, M. L.",
+    "title": "A brief parent-focused intervention to improve preschoolers’ conversational skills and school readiness",
+    "journal": "Developmental Psychology",
+    "details": ", 54(1), 15–28",
+    "doi": "https://doi.org/10.1037/dev0000411",
+    "note": null,
+    "type": "article",
+    "selected": false,
+    "metadataSource": "https://api.crossref.org/works/10.1037/dev0000411",
+    "topics": [
+      "language",
+      "interaction"
+    ],
+    "bibliography": {
+      "volume": "54",
+      "issue": "1",
+      "pages": "15–28"
+    }
+  }
+]

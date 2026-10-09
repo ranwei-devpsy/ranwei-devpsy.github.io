@@ -1,0 +1,22 @@
+---
+import { content } from '../lib/content';
+const { text, label } = Astro.props as { text: string; label: string };
+const c = content.copy;
+---
+<span class="copy-control">
+  <button type="button" class="text-button" data-copy={text} data-copied={c.copied} data-failed={c.failed}>{label}</button>
+  <span class="copy-status" role="status"></span>
+</span>
+<script>
+  document.querySelectorAll<HTMLButtonElement>('button[data-copy]').forEach(button => {
+    const status = button.nextElementSibling as HTMLElement;
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(button.dataset.copy!);
+        status.textContent = button.dataset.copied!;
+      } catch {
+        status.textContent = button.dataset.failed!;
+      }
+    });
+  });
+</script>

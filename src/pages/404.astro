@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { pathFor } from '../lib/paths';
+---
+<Layout title="Page not found">
+  <header class="page-heading">
+    <p class="eyebrow">404</p>
+    <h1>Page not found</h1>
+    <p>The requested page could not be found.</p>
+    <div class="intro-links"><a class="button" href={pathFor()}>Home<span aria-hidden="true">→</span></a></div>
+  </header>
+</Layout>

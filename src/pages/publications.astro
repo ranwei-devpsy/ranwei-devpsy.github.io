@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Publication from '../components/Publication.astro';
+import publications from '../data/publications.json';
+import { content } from '../lib/content';
+const c = content;
+const years = [...new Set(publications.map(p => p.year))].sort((a, b) => b - a);
+---
+<Layout title={c.nav.publications} active="publications">
+  <header class="page-heading"><h1>{c.nav.publications}</h1><p>{c.publications.intro}</p></header>
+  <div class="publication-controls" role="search" aria-label={c.publications.filter}>
+    <div class="search-control"><label for="publication-search">{c.publications.search}</label><input id="publication-search" type="search" placeholder={c.publications.placeholder} /></div>
+    <div class="area-control"><label for="publication-area">{c.publications.area}</label><select id="publication-area"><option value="all">{c.publications.allAreas}</option>{Object.entries(c.publications.areas).map(([key, label]) => <option value={key}>{label}</option>)}</select></div>
+    <div class="year-control"><label for="publication-year">{c.publications.year}</label><select id="publication-year"><option value="all">{c.publications.allYears}</option>{years.map(year => <option value={year}>{year}</option>)}</select></div>
+    <button id="reset-filters" type="button">{c.publications.reset}</button>
+  </div>
+  <p class="publication-count" id="publication-count" aria-live="polite">{publications.length} {c.publications.count}</p>
+  <p class="authorship-key">{c.publications.key}</p>
+  <div id="publication-list">{years.map(year => <section class="year-group" data-group-year={year} aria-labelledby={`year-${year}`}><h2 class="year-heading" id={`year-${year}`}>{year}</h2>{publications.filter(p => p.year === year).map(paper => <div id={paper.id} class="publication-anchor"><Publication paper={paper} /></div>)}</section>)}</div>
+  <p id="no-results" class="no-results" hidden>{c.publications.empty}</p>
+</Layout>
+<script>
+  const search = document.querySelector<HTMLInputElement>('#publication-search')!;
+  const year = document.querySelector<HTMLSelectElement>('#publication-year')!;
+  const area = document.querySelector<HTMLSelectElement>('#publication-area')!;
+  const reset = document.querySelector<HTMLButtonElement>('#reset-filters')!;
+  const count = document.querySelector<HTMLElement>('#publication-count')!;
+  const noResults = document.querySelector<HTMLElement>('#no-results')!;
+  function filter() {
+    const term = search.value.trim().toLocaleLowerCase();
+    const selectedYear = year.value;
+    let visible = 0;
+    document.querySelectorAll<HTMLElement>('.publication-anchor').forEach(anchor => {
+      const paper = anchor.querySelector<HTMLElement>('.publication')!;
+      const matches = (selectedYear === 'all' || paper.dataset.year === selectedYear)
+        && (area.value === 'all' || paper.dataset.topics!.split(' ').includes(area.value))
+        && paper.dataset.search!.toLocaleLowerCase().includes(term);
+      anchor.hidden = !matches;
+      if (matches) visible++;
+    });
+    document.querySelectorAll<HTMLElement>('.year-group').forEach(group => {
+      group.hidden = !group.querySelector('.publication-anchor:not([hidden])');
+    });
+    count.textContent = `${visible} ${visible === 1 ? 'publication' : 'publications'}`;
+    noResults.hidden = visible > 0;
+  }
+  search.addEventListener('input', filter);
+  year.addEventListener('change', filter);
+  area.addEventListener('change', filter);
+  reset.addEventListener('click', () => { search.value = ''; year.value = 'all'; area.value = 'all'; filter(); search.focus(); });
+</script>
