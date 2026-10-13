@@ -12,7 +12,7 @@ export const content = {
   home: {
     bio: 'Ran Wei is an Assistant Professor at Peking University Graduate School of Education. Situated at the crossroads of developmental science and educational technology, her research examines how early language and cognitive development unfolds across diverse cultures and ecologies, and how caregiver communicative input and emerging technologies shape early development. Her recent work focuses on the affordances and risks of AI in early development, AI-assisted parenting interventions, and the home-environment factors supporting language, self-regulation, and future thinking, especially in low-resource settings. She works across modalities including eye tracking, behavioral experiments, LENA, and large language model tools for analyzing parent-child interaction at scale. She aspires to translate findings into accessible, culturally sensitive knowledge for parents, educators, and the public.',
     selected: 'Selected publications', allPublications: 'All publications',
-    portrait: 'Portrait of Ran Wei',
+    portrait: 'Portrait of Ran Wei, with an adult photograph above a childhood photograph',
   },
   themes: [
     { title: 'Language development and parent–child interaction', description: 'Her work examines gestures, caregiver speech, and parent–child conversations in relation to children’s language and cognitive development. Cross-cultural studies focus on decontextualized language, including conversations about past and future events.', paperIds: ['publication-1', 'publication-7'] },

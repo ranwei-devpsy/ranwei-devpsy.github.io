@@ -43,7 +43,7 @@ nav a[aria-current=page]:after{content:'';position:absolute;bottom:0;left:0;righ
 .profile-aside{border-left:1px solid var(--line);padding-left:31px;align-self:start;font-size:13px;line-height:1.7}
 .profile-aside h2{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
 .profile-aside a{text-decoration:none}
-.profile-photo{display:block;width:100%;max-width:320px;height:auto;max-height:420px;object-fit:contain;object-position:left top}
+.profile-photo{display:block;width:100%;max-width:320px;height:auto;object-fit:contain;object-position:left top}
 .aside-details{margin-top:24px}
 .profile-aside .location{margin-top:9px;color:var(--muted);font-size:12px;line-height:1.8}
 .selected-publications{border-top:1px solid var(--line);padding-top:32px}
