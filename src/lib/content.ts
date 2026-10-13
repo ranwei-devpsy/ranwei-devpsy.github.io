@@ -39,7 +39,7 @@ export const content = {
   },
   about: {
     title: 'About Ran Wei',
-    appointments: 'Academic appointments', education: 'Education', recognition: 'Selected', awardsTitle: 'FELLOWSHIPS AND AWARDS', service: 'Academic service', talks: 'Invited talks', present: '2023–present',
+    appointments: 'Academic appointments', education: 'Education', recognition: 'SELECTED FELLOWSHIPS AND AWARDS', service: 'Academic service', talks: 'Invited talks', present: '2023–present',
     postdocLocation: 'Brookline, Massachusetts, USA · Supervisor: Charles A. Nelson',
     phdDetail: 'Concentration: Human Development, Learning and Teaching', secondary: 'Secondary field: Mind, Brain, and Behavior — Language Acquisition',
     phdSupervisor: 'Supervisor: Meredith Rowe, Paul Harris, and Catherine Snow',
